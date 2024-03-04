@@ -103,8 +103,6 @@
   margin: 0 auto;
 }
 
-
-
 @media screen and (min-width: 1440px) {
   .hero-block {
     margin-bottom: 10rem;
@@ -418,6 +416,9 @@
   .policy {
     padding: 5rem;
   }
+  .policy .sub-title {
+    margin-bottom: 20rem;
+  }
   .policy-list {
     align-items: flex-start;
     gap: 15rem;
@@ -427,6 +428,7 @@
   }
   .policy-block {
     position: relative;
+    padding-right: 20rem;
   }
   .policy-box {
     display: block;
@@ -435,8 +437,8 @@
     width: 40rem;
     height: 26rem;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translate(0, -50%);
   }
   .policy-box .line.first,
   .policy-box .line.second,
