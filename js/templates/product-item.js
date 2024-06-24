@@ -21,14 +21,20 @@ export const item = (product, counter) => {
             : ''
         }
         <div class="product__btn-block">
-          <a href="product-page.html?id=${product.id}" class="product__btn btn--first" style="margin: ${
-    product.type == 'ring' || product.type == 'clothing' ? 'auto' : ''
+
+
+       
+
+           <a href="product-page.html?id=${product.id}" class="product__btn btn--first" style="margin: ${
+    product.type == 'ring' || product.type == 'clothing' || product.type == 'shoes' ? 'auto' : ''
   }">details <span class="product__btn-arrow"></span></a>
-          ${
-            product.type == 'ring' || product.type == 'clothing'
-              ? ''
-              : '<button class="product__btn js_add-to-cart">buy <span class="product__btn-arrow"></span></button>'
-          }
+      ${
+        product.type == 'ring' || product.type == 'clothing' || product.type == 'shoes'
+          ? ''
+          : '<button class="product__btn js_add-to-cart">buy <span class="product__btn-arrow"></span></button>'
+      }
+
+
         </div>
       </div>
     </div>
